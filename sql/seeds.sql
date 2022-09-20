@@ -21,4 +21,4 @@ VALUES
 ('George', 'Harrison', 2,4),
 ('Ringo', 'Starr', NULL,5 ),
 ('Paul', 'McCartney', 3,6),
-('John','Lennon', 4,7);
+('John','Lennon', 4,3);
