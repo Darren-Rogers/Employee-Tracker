@@ -1,23 +1,24 @@
 INSERT INTO department(name)
 VALUES
-('Marketing')
-('Cleaning')
-('Food')
+('Marketing'),
+('Cleaning'),
+('Food');
 
-INSERT INTO roles(title, salary, department_id)
+INSERT INTO role (title, salary, department_id)
+VALUES 
+("Master Marketer", 5000.00, 1),
+("Bathroom Cleaner", 4000.00, 2),
+("Duster", 2000.00, 2),
+("Head Chef", 4000.00, 3),
+("Marketing Analyst", 1000.00, 1),
+("Taste tester", 1000.00, 3);
+
+INSERT INTO employee(first_name, last_name, manager_id, role_id)
 VALUES
-('Bathroom Cleaner', 1400, 2)
-('Media Marketing', 4000, 1)
-('Head Chef', 3000, 3)
-('Taste Tester', 1500, 3)
-('Duster', 1500, 2)
-('Head Marketer',7000, 1 )
-
-INSERT INTO employee(first_name, last_name, role_id, manager_id)
-('Ken', 'Kanaki', 1, 1)
-('George', 'Lucas', 2, NULL)
-('Marvin', 'Gaye',3, NULL)
-('George', 'Harrison',4, 2)
-('Ringo', 'Starr',5, NULL )
-('Paul', 'McCartney', 6, 3)
-('John''Lennon', 7, 4)
+('Ken', 'Kanaki', 1,1),
+('George', 'Lucas', NULL,2),
+('Marvin', 'Gaye', NULL,3),
+('George', 'Harrison', 2,4),
+('Ringo', 'Starr', NULL,5 ),
+('Paul', 'McCartney', 3,6),
+('John','Lennon', 4,7);
